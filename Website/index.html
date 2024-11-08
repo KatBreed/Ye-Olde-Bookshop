@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ye Olde Bookshop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="NZ Books, First Editions, Specialist Books">
+	<link rel="icon" sizes="32x32" type="image/x-icon" href="images/book_stack.jpg">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="js/navigation.js"></script>
+	<link rel="stylesheet" href="css/flexslider.css">
+	
+	<!--flexslider-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script>
+		(function() {
+		 
+		  
+		  var $window = $(window),
+			  flexslider = { vars:{} };
+		 
+		  
+		  function getGridSize() {
+			return (window.innerWidth < 600) ? 2 :
+				   (window.innerWidth < 900) ? 3 : 4;
+		  }
+		 
+		  $(function() {
+			SyntaxHighlighter.all();
+		  });
+		 
+		  $window.load(function() {
+			$('.flexslider').flexslider({
+			  animation: "slide",
+			  animationLoop: false,
+			  itemWidth: 210,
+			  itemMargin: 5,
+			  minItems: getGridSize(), 
+			  maxItems: getGridSize() 
+			});
+		  });
+		 
+		  
+		  $window.resize(function() {
+			var gridSize = getGridSize();
+		 
+			flexslider.vars.minItems = gridSize;
+			flexslider.vars.maxItems = gridSize;
+		  });
+		}());
+	</script>
+</head>
+
+<body>
+
+	<!--Header Banner and Photo-->
+	<header>
+		<h1>Ye Olde Bookshop</h1>
+		<img class="header_books" id="book_glasses" src="images/book_glasses.png" alt="An open book with glasses on top">
+		<span id="menu-button" onclick="toggleNav()">&#9776;</span>
+	</header>
+	
+	<!--Banner Image-->
+	<img id="store_photo" src="images/store_photo.jpg" alt="A photo of the bookshop">
+	
+	<!--Navigation Links-->
+	<nav id="main-menu">
+		<ul>
+			<li><a class="nav_link" href="index.html">Home</a></li>
+			<li><a class="nav_link" href="new_arrivals.html">New Arrivals</a></li>
+			<li><a class="nav_link" href="featured_author.html">Featured Author/Book</a></li>
+			<li><a class="nav_link" href="restorations.html">Restorations</a></li>
+			<li><a class="nav_link" href="showcase.html">Showcase</a></li>
+			<li><a class="nav_link" href="valuations.html">Valuations</a></li>
+		</ul>
+		<!--Twitter Follow-->
+		<div class="twitter_button_div">
+			<a class="blank_link" target="_blank" href="https://twitter.com/?lang=en-nz"><img id="twitter_follow" src="images/twitter.jpg" alt="Twitter Follow"></a>
+		</div>
+		<span id="close-button" onclick="toggleNav()">&times;</span>
+	</nav>
+			
+	<main id="home_main">
+		<!--New Arrivals-->
+		<div class="main_div" id="new_arrivals1">
+			<div>
+				<h2 class="home_h2" id="new_arrivals_title">New Arrivals</h2>
+			</div>
+			<div class="flexslider">
+				<ul class="slides">
+					<li><a class="blank_link" href="new_arrivals.html"><img class="main_book" id="wings_of_fire" src="images/wings_of_fire.jpg" alt="Wings of Fire Book by Tui T. Sutherland"></a></li>
+					<li><a class="blank_link" href="new_arrivals.html"><img class="main_book" id="better_off_dead" src="images/better_off_dead.jpg" alt="Better Off Dead Book by Lee and Andrew Child"></a><li>
+					<li><a class="blank_link" href="new_arrivals.html"><img class="main_book" id="midnight_library" src="images/midnight_library.jpg" alt="The Midnight Library Book by Matt Haig"></a></li>
+					<li><a class="blank_link" href="new_arrivals.html"><img class="main_book" id="the_match" src="images/the_match.jpg" alt="The Match Book by Harlan Coban"></a></li>
+					<li><a class="blank_link" href="new_arrivals.html"><img class="main_book" id="it_starts_with_us" src="images/it_starts_with_us.jpeg" alt="It Starts With Us Book by Colleen Hoover"></a></li>
+					<li><a class="blank_link" href="new_arrivals.html"><img class="main_book" id="my_policeman" src="images/my_policeman.jpeg" alt="My Policeman Book by Bethan Roberts"></a></li>
+					<li><a class="blank_link" href="new_arrivals.html"><img class="main_book" id="alan_rickman" src="images/alan_rickman.jpg" alt="Madly, Deeply: The Diaries of Alan Rickman by Alan Rickman"></a></li>
+					<li><a class="blank_link" href="new_arrivals.html"><img class="main_book" id="fairy_tale" src="images/fairy_tale.jpg" alt="Fairy Tale by Stephen King"></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--Featured Author - Ernest Hemingway-->
+		<div class="main_div" id="featured_author1">
+			<div id="featured_author2">
+				<h2 class="home_h2" id="featured_author_title"><a class="blank_link" id="featured_author_link" href="featured_author.html">Featured Author</a></h2>
+			</div>
+			<div id="featured_author3">
+				<a class="blank_link" href="featured_author.html"><img id="hemingway" src="images/hemingway.jpg" alt="Ernest Hemingway"></a>
+				<p class="para">
+					<span class="emphasis_1">Ernest Millar Hemingway</span> was born July 21, 1899. An American Nobel Prize winning author who wrote seven novels, six short-story collections, and two non-fiction works.
+					His style was minimalistic. A technique Hemingway coined as the <span class="emphasis_2"> Iceberg Theory</span>. His style was also masculine and he had a widely publicized life that included four marriages. 
+				<br>
+				<br>
+					He was a reporter during college and served as an ambulance driver during World War One. A defective eye kept him from military service. Upon recuperating at home he regained his focus in writing. Ending up in Paris,
+					he saw his first works published there. Including an important collection of stories called <span class="emphasis_2">In Our Time</span>.
+				</p> 
+			</div>
+		</div>
+		
+		<!--Book of the Month - Old Man and the Sea-->
+		<div class="main_div" id="book_of_month1">
+			<div id="book_of_month2">
+				<h2 class="home_h2" id="book_of_month_title"><a class="blank_link" href="featured_author.html">Book of the Month</a></h2>
+			</div>
+				<div id="book_of_month3">
+				<a class="blank_link" href="featured_author.html"><img id="old_man_sea" src="images/old_man_and_the_sea.jpg" alt="Old Man and the Sea Book"></a>
+				<p class="para">
+					<span class="emphasis_1">The Old Man and the Sea</span> is a Pulitzer Prize winning novella written by <span class="emphasis_2"> Hemingway</span> and first published in 1952. This last major work of his. Set in Havana, it tells the story
+					of an aged Cuban fisherman suffering from an eighty-four day unlucky streak. On the eighty-fifth day he encounters a Marlin and battles to bring it back home. 
+				<br>
+				<br>
+					<span class="emphasis_2">The Old Man and the Sea</span> reinstated Hemingway's place in the world of Literature as his previous work, a full novel <span class="emphasis_2">Across the River and into the Trees</span>, was not recieved by critics very well.
+				</p>
+			</div>
+		</div>
+	</main>
+
+	<!--Aside - Valuations information-->
+	<aside id="home_aside">
+		<div>
+			<h3>Valuations</h3>
+		</div>
+		<div>
+			<p class="para">
+			Ye Olde Bookshop offers Valuation services and can be contacted anytime if you would like to know the value of your book.
+			</p>
+			<p class="para">
+			Things to keep in mind when thinking about what a book might be worth are:
+			</p>
+				<ul id="valuation_list">
+					<li>Age</li>
+					<li>Condition</li>
+					<li>Signatures and other Inscriptions</li>
+					<li>Rarity</li>
+					<li>Demand</li>
+					<li>First Edition</li>
+					<li>Dust Jacket</li>
+				</ul>
+			<p class="para">
+				For more information see our <span class="emphasis_2"><a id="page_link" class="nav_link" href="valuations.html">valuations</a></span> page. 
+			</p>
+		</div>
+	</aside>
+	
+	<!--Footer Link and Copyright-->
+	<footer>
+		<ul>
+			<li><a class="nav_link" href="about_us.html">About Us</a></li>
+			<li><a class="nav_link" href="enquiries.html">Enquiries</a></li>
+			<li><a class="nav_link" href="hours.html">Opening Hours</a></li>
+		</ul>
+		<p>Copyright &copy; 2022 Ye Olde Bookshop</p>
+	</footer>
+	
+</body>
+</html>

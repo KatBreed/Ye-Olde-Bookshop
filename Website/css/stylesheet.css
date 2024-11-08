@@ -1,0 +1,933 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+/*---------------------------------------------
+		    HOMEPAGE / BASE FOR PAGES
+----------------------------------------------*/
+
+/*------------------------
+Layout and Image Sizing
+-------------------------*/
+
+/*Image Sizing*/
+.header_books {
+	width: 10em;
+	height: auto;
+	max-height: 100%;
+}
+
+#store_photo {
+	height: 16.1em;
+	max-height: 100%;
+	width: auto;
+}
+
+#twitter_follow {
+	height: auto;
+	max-height: 100%;
+	width: 4em;
+}
+
+#hemingway {
+	height: auto;
+	max-height: 100%;
+	width: 25em;
+}
+
+#old_man_sea {
+	height: 20em;
+	max-height: 100%;
+	width: auto;	
+}
+
+video {
+	width: 480px;
+	max-width: 100%;
+	height: auto;
+}
+
+/*Margins, Padding, Borders*/
+header, main, aside, footer {
+	padding: 1em;
+}
+
+nav {
+	border-top: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+}
+
+#twitter_follow {
+	padding-top: 1em;
+	padding-bottom: .5em;
+}
+
+#store_photo {
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+nav ul > li, footer ul > li {
+	padding-top: 1em;
+}
+
+.pages_header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.home_h2 {
+	padding-bottom: .5em;
+}
+
+h3 {
+	padding-top: 1em;
+	padding-right: 2em;
+	padding-left: 1.7em;
+}
+
+h4 {
+	padding-top: .5em;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+.para {
+	padding-top: .5em;
+	padding-right: 2em;
+	padding-left: 2em;
+	padding-bottom: 1.5em;
+}
+
+.main_book {
+	margin-left: 2.5em;
+}
+
+.main_div {
+	padding-top: 1em;
+	padding-right: 1.5em;
+	padding-bottom: 2.5em;
+	padding-left: 1.5em;
+}
+
+#showcase_main {
+	border-top: 1px solid #000000;
+}
+
+#new_arrivals1 {
+	border-bottom: 1px solid #000000;
+}
+
+#book_of_month1 {
+	border-top: solid 1px #000000;
+}
+
+aside {
+	border-top: solid 1px #000000;
+}
+
+#valuation_list {
+	padding-left: 2em;
+	padding-bottom: 2.5em;
+	list-style-position: inside;
+}
+
+footer {
+	border-top: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+}
+
+/*---------------------------
+         Typography
+-----------------------------*/
+body {
+	line-height: 1.5;
+}
+
+header, main {
+	text-align: center;
+}
+
+h1 {
+	font-family: "Snell Roundhand Script", "Brush Script MT", cursive;
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 2rem;
+	text-align: left;
+	font-family: Helvetica, Verdana, sans-serif;
+	font-weight: bold;
+}
+
+h3, h4 {
+	font-family: Helvetica, Verdana, sans-serif;
+	text-align: left;
+}
+
+.pages_header {
+	text-align: center;
+	font-size: 2em;
+	font-family: "Snell Roundhand Script", "Brush Script MT", cursive;
+}
+
+#book_of_month_title {
+	font-weight: normal;
+}
+
+p {
+	text-align: justify;
+	font-family: Helvetica, Verdana, sans-serif;
+}
+
+nav, footer {
+	font-family: "Snell Roundhand Script", "Brush Script MT", cursive;
+}
+
+footer > p {
+	text-align: right;
+	font-family: Helvetica, Verdana, san-serif;
+}
+	
+.emphasis_1 {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.emphasis_2 {
+	font-style: italic;
+}
+
+/*Navigation Links - Nav and Footer*/
+nav ul, footer ul{
+	list-style-type: none;
+}
+
+nav, footer {
+	text-align: center;
+}
+
+#main-menu ul a, footer ul a {
+	text-decoration: none;
+	font-size: 1.7em;
+}
+
+/*Other Links*/
+.blank_link {
+	text-decoration: none;
+	color: #444444;
+}
+
+
+/*-------------------------
+    Colour and Styling
+--------------------------*/
+body {
+	color: #444444;
+	background-color: #ffffff;
+}
+
+header {
+	background-color: #9CEDF7;
+}
+
+h1, h2, h3, h4 {
+	color: #444444;
+}
+
+nav, footer {
+	background-color: #FAFB0F;
+}
+
+main {
+	background-color: #C8F99C;
+}
+
+aside {
+	background-color: #b3ecff;
+}
+
+.nav_link:hover, footer a:hover {
+	color: #020e46;
+    text-shadow: 3px 3px 3px #00000050;
+}
+	
+.nav_link:hover::before, footer a:hover::before {
+    content: '~';
+}
+
+.nav_link:hover::after, footer a:hover::after {
+    content: '~';
+}
+
+/*-------------------------------------
+	MAIN MENU - HAMBURGER MENU
+---------------------------------------*/
+
+#main-menu ul {
+    list-style-type: none;
+	white-space: nowrap;
+}
+
+#main-menu a {
+    text-decoration: none;
+    display: block;
+	padding-top: .5em;
+    padding-left: .5em;
+	padding-right: .5em;
+}
+
+#main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    z-index: 10;
+    overflow: hidden;
+    padding-top: 2.75em;
+    transition: 0.5s;
+    max-width: 22em;
+}
+
+#main-menu.open {
+    width: 100%;
+}
+
+#main-menu ul {
+	white-space: nowrap;
+}
+
+#main-menu li {
+    line-height: 1.2;
+    border-bottom: 1px solid #fff;	
+}
+
+#main-menu a {
+    display: block;
+    font-size: 1.7em;
+}
+
+#menu-button, #close-button {
+    cursor: pointer;
+    line-height: 1;
+}
+
+#menu-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.8rem;
+}
+
+#close-button {
+    position: absolute;
+    top: 0;
+    right: 0.3rem;
+    font-size: 2.5rem;
+    padding: 0;
+}
+
+/*-------------------------------------------
+			NEW ARRIVALS PAGE
+--------------------------------------------*/	
+.arrivals_book {
+	height: auto;
+	max-height: 100%;
+	width: 15em;
+}
+
+/*margins padding and borders*/
+.arrivals_book {
+	padding-left: 2em;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-bottom: 1.5em;
+}
+
+.arrivals_div  {
+	border-bottom: 1px solid #000000;
+	padding-bottom: 2.5em;
+	padding-top: 1.5em;
+}
+
+#fairy_tale_div {
+	border-top: 0;
+	border-bottom: 0;
+}
+
+/*--------------------------------------
+	FEATURED AUTHOR / BOOK PAGE
+---------------------------------------*/
+#hemingway_young {
+	height: 15em;
+	max-height: 100%;
+	width: auto;
+}
+
+#hemingway_div {
+	border-bottom: 1px solid #000000;
+	padding-bottom: 2em;
+}
+
+#featured_book {
+	height: 18em;
+	max-height: 100%;
+	width: auto;
+}
+
+#featured_book_div {
+	padding-top: 2em;
+}
+
+/*------------------------------------------
+		RESTORATIONS PAGE
+-------------------------------------------*/
+#restoration_list {
+	list-style-position: inside;
+	text-align: left;
+	padding-left: 2em;
+}
+
+.restored_book {
+	height: 15em;
+	max-height: 100%;
+	Width: auto;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+.aside_v2 {
+	background-color: #b3ecff;
+	text-align: center;
+}
+
+/*---------------------------------------
+             ABOUT US PAGE
+----------------------------------------*/
+#about_slogan1 {
+	font-size: 1.5rem;
+}
+
+.about_image {
+	height: 12em;
+	max-height: 100%;
+	width: auto;
+	padding: .5em;
+	background-color: #8c8c8c;
+	border: 2px solid #000000;
+}
+
+.about_caption {
+	text-align: center;
+	font-style: italic;
+	width: 8em;
+	min-width: 100%;
+	height: auto;
+	padding-bottom: 1.5em;
+}
+
+
+/*---------------------------------------
+		ENQUIRIES PAGE
+----------------------------------------*/
+form > div {
+	margin-bottom: 1.5em;
+}
+
+.required {
+	color: #f00;
+}
+
+label {
+	display: block;
+	margin-top: 1em;
+}
+
+.field {
+	height: 2.5em;
+	width: 20em;
+}
+
+textarea {
+	height: 15em;
+	width: 30em;
+}
+
+/*---------------------------------
+		VALUATIONS PAGE
+-----------------------------------*/
+
+.valuations_book {
+	height: 15em;
+	max-height: 100%;
+	width: auto;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+/*---------------------------------
+		SHOWCASE PAGE
+----------------------------------*/
+.showcase_book {
+	height: 15em;
+	max-height: 100%;
+	Width: auto;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+/*----------------------------------------
+        MEDIA QUERY - HOMEPAGE / BASE
+-----------------------------------------*/
+
+/*---------------------------------------
+Media Query - Homepage / Base - Medium Size
+------------------------------------------*/
+@media screen and (min-width: 44rem) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 20rem 35rem 1fr;
+	}
+	
+	header {
+		grid-column: 2 / 4;
+		grid-row: 1;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	
+	#store_photo {
+		grid-column: 2 / 4;
+		grid-row: 2;
+		height: auto;
+		max-height: 100%;
+		width: 55em;
+	}
+	
+	#main-menu {
+		grid-column: 2;
+		grid-row: 3 / 6;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	
+	/*MAIN MENU - HIDE HAMBURGER MENU*/
+	#menu-button, #close-button {
+		display: none;
+	}
+    
+    #main-menu {
+        position: static;
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+        transition: none;
+        padding-top: 0;
+    }
+	
+	#main-menu li {
+        border: 0;
+    }
+
+	main {
+		grid-column: 3 / 4;
+		grid-row: 3 / 5;
+	}
+	
+	#valuations_main {
+		grid-column: 3 / 4;
+	}
+	
+	#hours_main {
+		grid-row: 3 / 6;
+	}
+	
+	.arrivals_div {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	
+	.main_book {
+		height: 15em;
+		max-height: 100%;
+		width: auto;
+	}
+	
+	aside {
+		grid-column: 3 / 4;
+		grid-row: 5;
+	}
+	
+	footer {
+		grid-column: 2 / 4;
+		grid-row: 6;
+	}
+	
+	/*Borders*/
+	header, nav, footer, #store_photo {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	}
+	
+	main {
+		border-top: 1px solid #000000;
+		border-right: 1px solid #000000;
+	}	
+	
+	nav {
+		border-bottom: 0;
+	}
+	
+	aside {
+		border-right: 1px solid #000000;
+	}
+}
+
+/*-----------------------------------------------------
+Media Query - Homepage / Base - Full Desktop Screen
+-------------------------------------------------------*/
+@media screen and (min-width: 72rem) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 52rem 20rem 1fr;
+	}
+	
+	header {
+		grid-column: 2 / 4;
+		grid-row: 1;
+	}
+	
+	#store_photo {
+		height: auto;
+		width: 72em;
+		max-height: 100%;
+		grid-column: 2 / 4;
+		grid-row: 2;
+	}
+	
+	/*MAIN MENU - HIDE HAMBURGER MENU*/
+	#main-menu {
+		grid-column: 2 / 4;
+		grid-row: 3;
+	}
+	
+	#menu-button, #close-button {
+		display: none;
+	}
+	
+    #main-menu ul {
+        display: flex;
+    }
+    
+    #main-menu {
+        position: static;
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+        transition: none;
+        padding-top: 0;
+    }
+	
+	#main-menu li {
+        border: 0;
+    }
+	
+	#main-menu a {
+        padding-right: 1em;
+    }
+	
+	nav {
+		grid-column: 2 / 4;
+		grid-row: 2;
+	}
+	
+	#valuations_main, #restoration_main, #enquiries_main {
+		grid-column: 2 / 3;
+		grid-row: 4;
+	}
+	
+	main, #featured_main, #new_arrivals_main {
+		grid-column: 2 / 4;
+		grid-row: 4;
+	}
+	
+	#home_main {
+		grid-column: 2 / 4;
+		grid-row: 4;
+	}
+	
+	#hours_main {
+		grid-column: 2 / 4;
+		grid-row: 4;
+	}
+	
+	aside {
+		grid-column: 3;
+		grid-row: 4;
+	}
+	
+	#home_aside {
+		grid-column: 2 / 4;
+		grid-row: 5;
+	}
+	
+	footer {
+		grid-column: 2 / 4;
+	}
+	
+	nav ul, footer ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	
+	#new_arrivals2 {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	
+	/*Book Image Sizing */
+	.main_book {
+		width: 10em;
+		height: auto;
+		max-height: 100%
+	}
+	
+	#hemingway, #old_man_sea {
+		margin-top: 1em;
+	}
+	
+	#featured_author3 {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+	
+	#book_of_month3 {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+	
+	/*Borders, Margins*/
+	header, nav, main, footer, #store_photo {
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	}
+	
+	.twitter_button_div {
+		margin: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 55em;
+	}
+	
+	aside {
+	border-right: 1px solid #000000;
+	}
+}
+	
+/*------------------------------------------
+		MEDIA QUERY - NEW ARRIVALS
+-------------------------------------------*/
+
+/*Media Query - New Arrivals -  Medium Screen*/
+@media screen and (min-width: 44rem) {
+	.arrivals_div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+}
+	
+/*Media Query - New Arrivals - Full Screen Desktop*/
+@media screen and (min-width: 72rem) {
+	#arrivals_detailed {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.arrivals_div {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-evenly;
+	}
+	
+	.arrivals_book {
+		height: auto;
+		max-height: 100%;
+		width: 15em;
+	}
+}
+
+/*-----------------------------------
+        MEDIA QUERY - SHOWCASE
+-----------------------------------*/
+
+/*Media Query - Showcase - Medium Screen*/
+@media screen and (min-width: 44rem) {
+	#showcase_main {
+		grid-row: 3;
+	}
+	
+	video {
+		width: 520px;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+/*Media Query - Showcase - Full Desktop Screen*/
+@media screen and (min-width: 72rem) {
+	#showcase_main {
+		grid-column: 2 / 3;
+		grid-row: 4;
+	}
+	
+@media screen and (min-width: 72rem) {
+	video {
+		width: 580px;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+/*----------------------------------
+         MEDIA QUERY - ABOUT US
+-----------------------------------*/
+/*Media Query - About Us - Medium Sreen*/
+@media screen and (min-width: 44rem) {
+	.profile_div {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	
+	.about_image {
+		margin-left: 2.5em;
+		margin-right: 2.5em;
+	}
+	
+	#about_slogan1 {
+		margin-bottom: 1em;
+	}
+}
+
+/*Media Query - About Us - Full Screen Desktop*/
+@media screen and (min-width: 72rem) {
+	.profile_div {
+		margin-left: 13em;
+		margin-right: 13em;
+	}
+}
+
+/*-------------------------------------------------
+		MEDIA QUERY - RESTORATIONS
+--------------------------------------------------*/
+/*Media Query - Restorations - Medium Screen*/
+@media screen and (min-width: 44rem) {
+	#restored_div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+/*Media Query - Restorations - Full Screen Desktop*/
+@media screen and (min-width: 72rem) {
+	#restored_div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+/*-------------------------------------------------
+		MEDIA QUERY - VALUATIONS
+--------------------------------------------------*/
+/*Media Query - Restorations - Medium Screen*/
+@media screen and (min-width: 44rem) {
+	#valuation_books_div {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.valuations_book {
+	height: auto;
+	max-height: 100%;
+	width: 15em;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	padding-left: .5em;
+	padding-right: .5em;
+	}
+}
+
+/*Media Query - Valuations - Full Screen Desktop*/
+@media screen and (min-width: 72rem) {
+	#valuation_books_div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+}
+
+/*---------------------------------------
+		MEDIA QUERY - ABOUT US
+-----------------------------------------*/
+/*Media Query - Restoration - Full Screen Desktop*/
+@media screen and (min-width: 72rem) {
+	.body_v3 {
+		display: grid;
+		grid-template-columns: 1fr 20rem 52rem 1fr;
+	}
+	
+	.main_v3 {
+		grid-column: 3 / 4;
+		grid-row: 4;
+	}
+	
+	.aside_v3 {
+		grid-column: 2;
+	}
+}
+
+/*---------------------------------------
+		MEDIA QUERY - OPENING HOURS
+-----------------------------------------*/
+/*Media Query - OPening Hours - Full Screen Desktop*/
+@media screen and (min-width: 72rem) {
+	#hours_para {
+		margin-bottom: 8em;
+	}
+}
+}

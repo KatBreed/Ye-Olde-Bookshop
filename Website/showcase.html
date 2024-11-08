@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ye Olde Bookshop - Showcase</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="NZ Books, First Editions, Specialist Books">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="js/navigation.js"></script>
+	<link rel="icon" sizes="32x32" type="image/x-icon" href="images/book_stack.jpg">
+</head>
+
+<body>
+
+	<!--Header Banner-->
+	<header>
+		<h1>Ye Olde Bookshop</h1>
+		<img class="header_books" id="book_glasses" src="images/book_glasses.png" alt="An open book with glasses on top">
+		<span id="menu-button" onclick="toggleNav()">&#9776;</span>
+	</header>
+	
+	<!--Navigation Links-->
+	<nav id="main-menu">
+		<ul>
+			<li><a class="nav_link" href="index.html">Home</a></li>
+			<li><a class="nav_link" href="new_arrivals.html">New Arrivals</a></li>
+			<li><a class="nav_link" href="featured_author.html">Featured Author/Book</a></li>
+			<li><a class="nav_link" href="restorations.html">Restorations</a></li>
+			<li><a class="nav_link" href="showcase.html">Showcase</a></li>
+			<li><a class="nav_link" href="valuations.html">Valuations</a></li>
+		</ul>
+		<!--Twitter Follow-->
+		<div class="twitter_button_div">
+			<a class="blank_link" target="_blank" href="https://twitter.com/?lang=en-nz"><img id="twitter_follow" src="images/twitter.jpg" alt="Twitter Follow"></a>
+		</div>
+		<span id="close-button" onclick="toggleNav()">&times;</span>
+	</nav>
+	
+	<!--Showcase-->
+	<main class="main_v2" id="showcase_main">
+		<div>
+			<h2 class="pages_header" id="showcase_title">Showcase</h2>
+		</div>
+		
+		<div>
+			<video controls>
+			<source src="media/showcase_video.mp4" type="video/mp4">
+			Your browser does not support this video.
+			</video>
+		</div>
+	</main>
+	
+	<aside class="aside_v2">
+		<div>
+			<h3 class="pages_header">First Editions</h3>
+		</div>
+		<div id="showcase_book_div1">
+			<div>
+				<img class="showcase_book" src="images/ripley.jpg" alt="First Edition The Talented Mr. Ripley by Patricia Highsmith">
+				<p class="about_caption">First edition of The Talented Mr. Ripley by Patricia Highsmith.</p>
+			</div>
+			<div>
+				<img class="showcase_book" src="images/gatsby.jpg" alt="The Great Gatsby by F. Scott. Fitzgerald. First printing 1925">
+				<p class="about_caption">First printing 1925 of The Great Gatsby by F. Scott. Fitzgerald.</p>
+			</div>
+		</div>
+	</aside>
+	
+	<!--Footer Link and Copyright-->
+	<footer>
+		<ul>
+			<li><a href="about_us.html">About Us</a></li>
+			<li><a href="enquiries.html">Enquiries</a></li>
+			<li><a href="hours.html">Opening Hours</a></li>
+		</ul>
+		<p>Copyright &copy; 2022 Ye Olde Bookshop</p>
+	</footer>
+	
+</body>
+</html>
